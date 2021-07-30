@@ -1,6 +1,7 @@
 :root {
   --warnaUtama: #facc16;
   --warnaBackground: #0d1117;
+  --navColor: #1C1E22;
   --fontBody: "Poppins", sans-serif;
   --fontHeading: "Fjalla One", sans-serif;
 }
@@ -18,16 +19,30 @@
 }
 
 body {
-  display: flex;
-  flex-direction: row;
   background-color: var(--warnaBackground);
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+header {
+  width: 100px;
+}
+
+header > nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100vh;
+  background-color: var(--navColor);
 }
 
 main {
-  flex: 1;
-  justify-content: center;
-  align-items: center;
   display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-family: var(--fontBody);
 }
 
 h2 {
@@ -90,3 +105,11 @@ p {
 .btn-bergabung:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+
+/* ini bagian halaman projects */
+.section {
+  height: 100vh;
+}
+
+/* ini bagian halaman projects */
