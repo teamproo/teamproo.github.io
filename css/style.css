@@ -4,3 +4,30 @@
   --fontHeading: "Poppins", sans-serif;
   --fontBody: "Fjalla One", sans-serif;
 }
+.tombol{
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Poppins;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color:#0d1117;
+  color: #FACC16;
+  border: 3px solid #FACC16;
+  border-radius: 7%;
+  transition-duration: 0.4s;
+}
+.tombol:hover {
+  background-color: #FACC16; 
+  color: #0d1117;
+}
+
+.fontHeading{
+  font-family: Fjalla One;
+  
+}
+.fontBody{
+    font-family: Poppins;
+}
