@@ -12,6 +12,11 @@
   color: #fff;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+}
+
 /* Kesepakatan bersama */
 .container {
   margin: 20px 25px;
@@ -73,6 +78,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .btn-bergabung > span {
@@ -82,11 +88,35 @@ p {
   color: var(--warnaUtama);
 }
 
-.btn-bergabung {
-  cursor: pointer;
-  background-color: transparent;
-}
-
 .btn-bergabung:hover {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-right {
+  margin-left: 50px;
+}
+
+.about-right p {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+.about-right > button {
+  border: 1px solid var(--warnaUtama);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.about-right > button:hover {
+  background-color: black;
+}
+
+.about-right img {
+  padding: 10px;
+}
+
+.about-left img {
+  transform: scaleX(-1);
 }
