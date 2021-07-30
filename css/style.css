@@ -125,3 +125,162 @@ p {
 .about-left img {
   transform: scaleX(-1);
 }
+
+/* members */
+
+.grid-member {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  justify-items: center;
+  width: 40%; /*atur panjang grid dan contianer member*/
+}
+
+.grid-member .card-member {
+  position: relative;
+}
+
+.grid-member .card-member .member-img {
+  height: 150px;
+  width: 120px; /*atur panjang card*/
+  border-radius: 10px;
+}
+
+/* overlay card */
+.grid-member .card-member .grid-overlay {
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.grid-member .card-member .grid-overlay:hover {
+  opacity: 1;
+  border: 1px solid #facc16;
+  background-color: rgba(0, 0, 0, 0.692);
+}
+
+/* isi overlay */
+.grid-member .title-member {
+  font-size: 0.9em;
+  font-weight: bold;
+  font-family: var(--fontHeading);
+  opacity: 1;
+}
+.grid-member .btn-profile {
+  padding: 3px 15px;
+  background-color: rgba(0, 0, 1, 0.692);
+  color: #fff;
+  border: 1px solid #facc16;
+  margin-top: 10px;
+  font-family: var(--fontHeading);
+  border-radius: 2px;
+  opacity: 1;
+  font-size: 0.8em;
+}
+
+.grid-member .btn-profile:hover {
+  background-color: #facc16;
+  color: #000;
+}
+
+/* sidebar member */
+.sidebar-member {
+  height: 100%; /* 100% Full-height */
+  width: 40%; /*  width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding: 30px 20px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  opacity: 1;
+  border-left: 2px solid #facc16;
+  border-radius: 20px 0 0 20px;
+  font-family: var(--fontHeading);
+}
+
+.sidebar-member .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 3em;
+  margin-left: 50px;
+  color: #facc16;
+  text-decoration: none;
+}
+
+.sidebar-member .sidebar-profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.sidebar-profil .sidebar-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.sidebar-profil .profil-text {
+  text-align: center;
+  width: 80%;
+  font-size: 1em;
+}
+.sidebar-profil .profil-text .nama-profil {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.profil-list-link {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+.profil-list-link .profil-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
+
+.profil-list-link .icon-link {
+  padding: 5px;
+  border: 1px solid #facc16;
+  border-radius: 5px;
+  margin: 5px 20px 5px 0px;
+}
+
+.sidebar-member .hire-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  margin: 20px auto;
+  text-align: center;
+  text-decoration: none;
+  color: var(--warnaUtama);
+  font-size: 1.5em;
+  padding: 10px 20px;
+  border: 1px solid #facc16;
+  border-radius: 8px;
+}
+
+.sidebar-member .hire-btn:hover {
+  background-color: var(--warnaUtama);
+  color: #000;
+}
