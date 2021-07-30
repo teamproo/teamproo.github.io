@@ -1,17 +1,92 @@
 :root {
   --warnaUtama: #facc16;
   --warnaBackground: #0d1117;
-  --fontHeading: "Poppins", sans-serif;
-  --fontBody: "Fjalla One", sans-serif;
+  --fontBody: "Poppins", sans-serif;
+  --fontHeading: "Fjalla One", sans-serif;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: #fff;
 }
 
 /* Kesepakatan bersama */
 .container {
   margin: 20px 25px;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--warnaBackground);
+}
+
+main {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+h2 {
+  font-weight: normal;
+  font-family: var(--fontHeading);
+  font-size: 56px;
+}
+
+h3 {
+  font-weight: normal;
+  font-family: var(--fontHeading);
+  font-size: 32px;
+  margin-top: -12px;
+}
+
+p {
+  font-family: var(--fontBody);
+  font-size: 14px;
+}
+
+.contents {
+  display: flex;
+  flex-direction: row;
+}
+
+.content-right > img {
+  width: 255px;
+}
+
+.content-left {
+  max-width: 220px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.btn-bergabung {
+  width: 100px;
+  height: 30px;
+  border: 1px solid var(--warnaUtama);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-bergabung > span {
+  font-family: var(--fontBody);
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--warnaUtama);
+}
+
+.btn-bergabung {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.btn-bergabung:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
