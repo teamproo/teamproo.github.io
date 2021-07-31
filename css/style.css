@@ -131,19 +131,24 @@ p {
 .grid-member {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 20px 40px;
+  align-items: center;
   justify-items: center;
-  width: 40%; /*atur panjang grid dan contianer member*/
+  /*width: 40%; atur panjang grid dan contianer member*/
 }
 
 .grid-member .card-member {
+  width: 170px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
   position: relative;
 }
 
 .grid-member .card-member .member-img {
-  height: 150px;
-  width: 120px; /*atur panjang card*/
-  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* overlay card */
@@ -170,9 +175,7 @@ p {
 
 /* isi overlay */
 .grid-member .title-member {
-  font-size: 0.9em;
-  font-weight: bold;
-  font-family: var(--fontHeading);
+  font-family: var(--fontBody);
   opacity: 1;
 }
 .grid-member .btn-profile {
@@ -181,15 +184,20 @@ p {
   color: #fff;
   border: 1px solid #facc16;
   margin-top: 10px;
-  font-family: var(--fontHeading);
+  font-family: var(--fontBody);
   border-radius: 2px;
   opacity: 1;
   font-size: 0.8em;
 }
 
-.grid-member .btn-profile:hover {
+.grid-overlay:hover {
+  cursor: pointer;
+}
+.grid-overlay:hover > .btn-profile {
   background-color: #facc16;
   color: #000;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /* sidebar member */
