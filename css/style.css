@@ -216,6 +216,7 @@ p {
   border-left: 2px solid #facc16;
   border-radius: 20px 0 0 20px;
   font-family: var(--fontHeading);
+  display: none;
 }
 
 .sidebar-member .closebtn {
@@ -295,19 +296,20 @@ p {
 
 /*Nav*/
 .sidenav {
-  height: 100%;
+  height: 100vh;
   width: 100px; /*10%*/
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   background-color: #111;
-  margin-top: 25px;
+  z-index: 2;
 }
 .sidenav .logo {
   /* height: 130px; */
   text-align: center;
   /* padding-top: 10px; */
   margin-bottom: 40px;
+  padding-top: 25px;
 }
 .sidenav .logo .tp {
   color: #facc16;
@@ -337,14 +339,15 @@ p {
   margin: auto;
 }
 .sidenav .cp {
-  position: absolute;
+  /* position: absolute; */
   bottom: 10%;
   color: #6f6f6f;
   font-size: 8px;
   text-align: center;
   /* width: 85%; */
-  margin: auto 7.5%;
+  /* margin: auto 7.5%; */
   font-family: var(--fontBody);
+  margin-top: 25px;
 }
 .sidebtn {
   display: flex;
@@ -354,6 +357,7 @@ p {
   position: fixed;
   bottom: 0;
   right: 0;
+  z-index: 2;
 }
 .sidebtn button {
   width: 50px;
