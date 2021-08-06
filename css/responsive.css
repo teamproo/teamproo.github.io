@@ -1,0 +1,60 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .heading-content-left > h2,
+  .heading-about-right > h2 {
+    font-size: 3em;
+  }
+
+  .heading-content-left > h3,
+  .heading-about-right > h3 {
+    font-size: 1.6em;
+  }
+
+  .content-left p {
+    font-size: 10px;
+  }
+
+  .grid-member {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .content-right > img,
+  .about-left > img {
+    width: 210px;
+  }
+
+  .container {
+    height: 100%;
+    min-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sidenav {
+    display: none;
+  }
+
+  .container {
+    height: 100%;
+    margin: 50px 0;
+  }
+
+  .grid-member {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contents {
+    flex-direction: column;
+  }
+
+  .content-left {
+    order: 2;
+  }
+
+  .content-right {
+    order: 1;
+  }
+
+  .btn-bergabung {
+    margin-top: 20px;
+  }
+}
